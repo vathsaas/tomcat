@@ -43,7 +43,7 @@ pipeline {
           url: 'https://xenstack.jfrog.io/artifactory',
           credentialsId: '292ed262-ca33-427f-a6f1-304f8574882b',
           timeout: 300
-        ),
+        )
         rtUpload (
           serverId: 'xen-artifactory',
           spec: '''{
