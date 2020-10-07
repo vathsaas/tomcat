@@ -60,7 +60,6 @@ pipeline {
   }
   post {
     always {
-      sh 'docker-compose --no-ansi down'
       cleanWs()
     }
   }
