@@ -50,7 +50,7 @@ pipeline {
             "files": [
               {
                 "pattern": "*.rpm",
-                "target": config.release_repo,
+                "target": "xen-release",
               }
             ]
           }'''
