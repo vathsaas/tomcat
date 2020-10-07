@@ -26,12 +26,12 @@ release: docker package-jar
 
 package-jar:
 	$(DOCKER_RUN_FPM) \
-		              -s dir \
-					  -t rpm \
-						-v $(VERSION) \
-						--iteration=$(ITERATION) \
-					  -n $(APPNAME) \
-					  $(BUILD_PATH)/
+	-s dir \
+	-t rpm \
+	-v $(VERSION) \
+	--iteration=$(ITERATION) \
+	-n $(APPNAME) \
+	$(BUILD_PATH)
 
 docker:
 	docker pull $(FPM_CONTAINER)
