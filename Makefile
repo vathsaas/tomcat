@@ -7,7 +7,7 @@ ITERATION         := $(BUILD_NUMBER).git+$(shell git rev-parse --short HEAD)
 APPNAME	          = xen-tomcat
 FPM_CONTAINER     = skandyla/fpm
 BUILD_PATH        = /opt/xen/tomcat
-DOCKER_RUN_FPM    = docker run --rm -i -v $(SRCDIR):/code -w /code/tomcat $(FPM_CONTAINER)
+DOCKER_RUN_FPM    = docker run --rm -i -v $(SRCDIR):/code/tomcat/ -w /code/tomcat $(FPM_CONTAINER)
 ISODATE           = $(shell date -u +%Y%m%d_%H%M%S)
 
 SHORT_GIT_COMMIT ?= $(shell git rev-parse --short HEAD)
