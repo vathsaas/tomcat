@@ -50,7 +50,7 @@ pipeline {
               "target": config.release_repo,
             }
           ]
-        }
+        }'''
       )
     }
   }
