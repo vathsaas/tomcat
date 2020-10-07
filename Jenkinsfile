@@ -42,7 +42,7 @@ pipeline {
         timeout: 300
       )
       rtUpload (
-        serverId: xen-artifactory',
+        serverId: 'xen-artifactory',
         spec: '''{
           "files": [
             {
