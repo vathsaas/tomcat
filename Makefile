@@ -31,7 +31,9 @@ package-jar:
 	-v $(VERSION) \
 	--iteration=$(ITERATION) \
 	-n $(APPNAME) \
-	$(BUILD_PATH)/=/code/tomcat
+	--directories=/opt/xen/tomcat \
+	--prefix /opt/xen/tomcat \
+	/code/tomcat/
 
 docker:
 	docker pull $(FPM_CONTAINER)
