@@ -31,7 +31,7 @@ package-jar:
 	-v $(VERSION) \
 	--iteration=$(ITERATION) \
 	-n $(APPNAME) \
-	$(BUILD_PATH)
+	$(BUILD_PATH)/
 
 docker:
 	docker pull $(FPM_CONTAINER)
